@@ -89,12 +89,32 @@ figure > img {
 .app__toolbar {
     background-color: var(--toolbar);
     min-height: 90px;
+    padding: 10px;
     flex-shrink: 0;
     justify-content: space-between;
+    align-items: center;
+}
+
+.listening figure {
+    max-width: calc(30px + 1.3vw);;
+    aspect-ratio: 1;
+	object-fit: cover;
 }
 
 .playback-bar {
     flex-direction: column;
+}
+
+@media (min-width: 639px) {
+  
+}
+
+@media (min-width: 878px) {
+
+}
+
+@media (min-width: 1440px) {
+    
 }
 
 
