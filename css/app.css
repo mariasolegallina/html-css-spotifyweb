@@ -28,3 +28,59 @@ figure > img {
 	display: block;
 	width: 100%;
 }
+
+/* app */
+#app {
+	height: 100vh;
+    overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* app__content */
+.app__content {
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+}
+
+/* sidebar */
+.sidebar {
+	width: 50px;
+	flex-shrink: 0;
+}
+
+/* content */
+.content {
+	flex-grow: 1;
+	overflow: auto;
+}
+
+/* app__toolbar */
+.app__toolbar {
+    min-height: 90px;
+}
+
+
+/* DEBUG */
+.debug .app__content {
+    flex-grow: 1;
+    border: solid 3px aquamarine;
+    padding: 20px;
+}
+
+.debug .sidebar {
+	border: solid 3px royalblue;
+	padding: 20px;
+}
+
+.debug .content {
+    border: solid 3px orange;
+    padding: 20px;
+
+}
+
+.debug .app__toolbar {
+    border: solid 3px palevioletred;
+    padding: 20px;
+}
