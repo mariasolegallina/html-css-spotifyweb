@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-<body class="debugg">
+<body class="debug">
     <div id="app">
 
         <!-- app__content -->
@@ -24,7 +24,27 @@
         </main>
         
         <!-- app__toolbar -->
-        <aside class="app__toolbar"></aside>
+        <aside class="app__toolbar row">
+
+            <!-- controls-left -->
+            <div class="controls-left row">
+                <div class="listening"></div>
+                <div class="icons"></div>
+            </div>
+
+            <!-- playback-bar -->
+            <div class="playback-bar row">
+                <div class="playback-bar__icons"></div>
+                <div class="bar"></div>
+            </div>
+
+            <!-- controls-rght -->
+            <div class="controsls-right row">
+                <div class="icons"></div>
+                <div class="bar"></div>
+            </div>
+
+        </aside>
     </div>    
 </body>
 </html>

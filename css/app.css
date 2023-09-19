@@ -30,6 +30,10 @@ figure > img {
 	width: 100%;
 }
 
+.row {
+    display: flex;
+}
+
 /* colours */
 :root {
     --main-view: #141922;
@@ -74,7 +78,6 @@ figure > img {
     }
 }
 
-
 /* main-view */
 .main-view {
     background-color: var(--main-view);
@@ -86,12 +89,17 @@ figure > img {
 .app__toolbar {
     background-color: var(--toolbar);
     min-height: 90px;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+.playback-bar {
+    flex-direction: column;
 }
 
 
 /* DEBUG */
-.debug .app__content {
-    flex-grow: 1;
+/* .debug .app__content {
     border: solid 3px aquamarine;
     padding: 20px;
 }
@@ -109,5 +117,9 @@ figure > img {
 
 .debug .app__toolbar {
     border: solid 3px palevioletred;
+    padding: 20px;
+} */
+.debug aside div {
+    border: solid 3px yellow;
     padding: 20px;
 }
