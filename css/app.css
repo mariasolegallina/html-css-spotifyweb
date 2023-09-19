@@ -101,6 +101,22 @@ figure > img {
 	object-fit: cover;
 }
 
+.listening {
+    white-space: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.listening__text .author {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.listening__text .title {
+    font-size: 10px;
+    font-weight: 600;
+}
+
 .playback-bar {
     flex-direction: column;
 }
@@ -114,7 +130,7 @@ figure > img {
 }
 
 @media (min-width: 1440px) {
-    
+
 }
 
 
