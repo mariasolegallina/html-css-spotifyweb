@@ -7,6 +7,7 @@
 
 html {
 	font-family: 'Inter', sans-serif;
+    color: white;
 }
 
 a {
@@ -29,6 +30,22 @@ figure > img {
 	width: 100%;
 }
 
+/* colours */
+:root {
+    --main-view: #141922;
+    --toolbar: #282828;
+    --grey: #A3A3A3;
+    --light-grey: #D2D2D2;
+}
+
+
+/* @media (min-width: 639px) { ... }
+
+@media (min-width: 878px) { ... }
+
+@media (min-width: 1440px) { ... } */
+
+
 /* app */
 #app {
 	height: 100vh;
@@ -46,18 +63,28 @@ figure > img {
 
 /* sidebar */
 .sidebar {
+    background-color: black;
 	width: 50px;
 	flex-shrink: 0;
 }
 
-/* content */
-.content {
+@media (min-width: 639px) {
+    .sidebar {
+        width: 230px;
+    }
+}
+
+
+/* main-view */
+.main-view {
+    background-color: var(--main-view);
 	flex-grow: 1;
 	overflow: auto;
 }
 
 /* app__toolbar */
 .app__toolbar {
+    background-color: var(--toolbar);
     min-height: 90px;
 }
 
@@ -74,7 +101,7 @@ figure > img {
 	padding: 20px;
 }
 
-.debug .content {
+.debug .main-view {
     border: solid 3px orange;
     padding: 20px;
 
