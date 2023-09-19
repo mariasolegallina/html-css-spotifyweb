@@ -34,10 +34,16 @@ figure > img {
     display: flex;
 }
 
+i {
+    width: 17px;
+    padding: 0 5px;
+}
+
 /* colours */
 :root {
     --main-view: #141922;
     --toolbar: #282828;
+    --dark-grey: #5A5A5A;
     --grey: #A3A3A3;
     --light-grey: #D2D2D2;
 }
@@ -95,16 +101,22 @@ figure > img {
     align-items: center;
 }
 
-.listening figure {
-    max-width: calc(30px + 1.3vw);;
-    aspect-ratio: 1;
-	object-fit: cover;
+.controls-left {
+    align-items: center;
+    gap: 10px;
 }
 
 .listening {
     white-space: nowrap;
     align-items: center;
     gap: 10px;
+}
+
+.listening figure {
+    min-height: 30px;
+    max-width: calc(30px + 1.3vw);;
+    aspect-ratio: 1;
+	object-fit: cover;
 }
 
 .listening__text .author {
@@ -115,10 +127,49 @@ figure > img {
 .listening__text .title {
     font-size: 10px;
     font-weight: 600;
+    color: var(--grey);
 }
 
 .playback-bar {
     flex-direction: column;
+}
+
+.controls-left .icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.controls-right {
+    flex-wrap: wrap;
+}
+
+.controls-right .icons {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.volume {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.bar-dark-grey {
+    width: 85px;
+    height: 4px;
+    background-color: var(--dark-grey);
+}
+
+.bar-light-grey {
+    width: 20%;
+    height: 100%;
+    background-color: var(--light-grey);
 }
 
 @media (min-width: 639px) {
