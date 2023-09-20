@@ -76,6 +76,14 @@ figure > img {
     padding: 10px;
 }
 
+@media (min-width: 639px) {
+    .sidebar {
+        width: 230px;
+        padding: 20px 20px 10px;
+    }
+}
+
+/* sidebar__logo */
 .icon-logo {
     filter: invert(1);
 }
@@ -86,11 +94,6 @@ figure > img {
 }
 
 @media (min-width: 639px) {
-    .sidebar {
-        width: 230px;
-        padding: 20px 20px 10px;
-    }
-
     .icon-logo {
        display: none;
     }
@@ -98,6 +101,17 @@ figure > img {
     .horizontal-logo {
         display: block;
     }
+}
+
+/* sidebar__menu */
+.sidebar__menu {
+    flex-direction: column;
+}
+
+.sidebar__menu figure {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
 }
 
 
