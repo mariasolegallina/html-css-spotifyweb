@@ -86,10 +86,12 @@ figure > img {
 /* sidebar__logo */
 .icon-logo {
     filter: invert(1);
+    margin-bottom: 12px;
 }
 
 .horizontal-logo {
     width: 130px;
+    margin-bottom: 27px;
     display: none;
 }
 
@@ -106,6 +108,17 @@ figure > img {
 /* sidebar__menu */
 .sidebar__menu {
     flex-direction: column;
+    row-gap: 5px;
+}
+
+.menu__item a {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 30px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 5px;
 }
 
 .sidebar__menu figure {
@@ -114,7 +127,16 @@ figure > img {
     padding: 3px;
 }
 
+.sidebar__menu .item__text {
+    display: none;
+    color: var(--dark-grey);
+}
 
+@media (min-width: 639px) {
+    .sidebar__menu .item__text {
+        display: block;
+    }
+}
 
 /* main-view */
 .main-view {
