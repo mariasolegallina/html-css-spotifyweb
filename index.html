@@ -17,72 +17,86 @@
         <main class="app__content">
             
             <!-- sidebar -->
-            <div class="sidebar">
+            <div class="sidebar row">
+                <div class="sidebar-top">
 
-                <!-- sidebar__logo -->
-                <div class="sidebar__logo">
-                    <figure class="horizontal-logo">
-                        <a href="#">
-                            <img src="./img/logo.svg" alt="spotify logo">
-                        </a>
-                    </figure>
-                    <figure class="icon-logo">
-                        <a href="#"><img src="./img/favicon.ico" alt="spotify icon"></a>
-                    </figure>
-                </div>
+                    <!-- sidebar__logo -->
+                    <div class="sidebar__logo">
+                        <figure class="horizontal-logo">
+                            <a href="#">
+                                <img src="./img/logo.svg" alt="spotify logo">
+                            </a>
+                        </figure>
+                        <figure class="icon-logo">
+                            <a href="#"><img src="./img/favicon.ico" alt="spotify icon"></a>
+                        </figure>
+                    </div>
 
-                <!-- sidebar__menu -->
-                <ul class="sidebar__menu row">
-                    <li class="menu__item">
-                        <a class="row" href="#">
-                            <figure class="item__home">
-                               <img src="./img/home.svg" alt="">
-                            </figure>
-                            <h4 style="color: white;" class="item__text selected">Home</h4>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="row" href="#">
-                            <figure class="item__search">
-                                <img src="./img/search.svg" alt="">
-                            </figure>
-                            <h4 class="item__text">Search</h4>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="row" href="#">
-                            <figure class="item__librery">
-                                <img src="./img/libreria.svg" alt="">
-                            </figure>
-                            <h4 class="item__text">Library</h4>
-                        </a>
-                    </li>
-                </ul>
-
-                <!-- sidebar__playlist -->
-                <div class="sidebar__playlist">
-                    <h4 class="playlist-title">Playlist</h4>
-                    <ul>
-                        <li class="new-playlist">
-                            <a href="#"><i class="fa-solid fa-plus"></i></a>
+                    <!-- sidebar__menu -->
+                    <ul class="sidebar__menu row">
+                        <li class="menu__item">
+                            <a class="row" href="#">
+                                <figure class="item__home">
+                                <img src="./img/home.svg" alt="">
+                                </figure>
+                                <h4 style="color: white;" class="item__text">Home</h4>
+                            </a>
                         </li>
-                        <li>
-                            <ul class="playlist-items">
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                            </ul>
+                        <li class="menu__item">
+                            <a class="row" href="#">
+                                <figure class="item__search">
+                                    <img src="./img/search.svg" alt="">
+                                </figure>
+                                <h4 class="item__text">Search</h4>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="row" href="#">
+                                <figure class="item__librery">
+                                    <img src="./img/libreria.svg" alt="">
+                                </figure>
+                                <h4 class="item__text">Library</h4>
+                            </a>
                         </li>
                     </ul>
+
+                    <!-- sidebar__playlist -->
+                    <div class="sidebar__playlist">
+                        <h4 class="playlist-title">Playlist</h4>
+                        <ul>
+                            <li class="new-playlist">
+                                <a href="#"><i class="fa-solid fa-plus"></i></a>
+                            </li>
+                            <li>
+                                <ul class="playlist-items">
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                    <li><a href="#">Nome Playlist</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-
-                <div class="sidebar__playlist"></div>
-                <div class="sidebar__account"></div>
+                <!-- sidebar__account -->
+                <div class="sidebar__account row">
+                    <a class="installa row" href="#">
+                        <figure class="installa__icon">
+                            <img src="./img/download.svg" alt="">
+                        </figure>
+                        <p class="installa__text">Installa app</p>
+                    </a>
+                    <a class="profile row" href="#">
+                        <figure class="profile__icon">
+                            <img src="./img/profile.svg" alt="">
+                        </figure>
+                        <p class="profile__text">John Doe</p>
+                    </a>
+                </div>
             </div>
 
             <!-- content -->
