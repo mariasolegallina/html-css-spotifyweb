@@ -133,10 +133,50 @@ figure > img {
 }
 
 @media (min-width: 639px) {
+    .sidebar__menu {
+        margin-bottom: 23px;
+    }
+
     .sidebar__menu .item__text {
         display: block;
     }
 }
+
+/* sidebar__playlist */
+.sidebar__playlist {
+    display: none;
+}
+
+.playlist-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.sidebar__playlist li {
+    margin-bottom: 24px;
+}
+
+.new-playlist i {
+    color: black;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: var(--grey);
+    padding: 10px;
+}
+
+.playlist-items {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-grey);
+}
+
+@media (min-width: 639px) {
+    .sidebar__playlist {
+        display: block;
+    }
+}
+
 
 /* main-view */
 .main-view {
