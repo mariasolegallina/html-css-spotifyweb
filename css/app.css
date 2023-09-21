@@ -284,13 +284,33 @@ figure > img {
 	overflow: auto;
 }
 
+.cta-bar {
+    position: fixed;
+    width: 100%;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    padding: 20px 10px;
+    justify-content: flex-end;
+}
+
+.cta-button {
+    border: solid 2px white;
+    border-radius: 999px;
+    line-height: 40px;
+    padding: 0 40px;
+    text-transform: uppercase;
+}
+
 .navigation {
     max-width: 100%;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .container {
-    padding: 0 15px;
+    padding: 20px 15px;
 }
 
 .nav-menu {
@@ -300,7 +320,7 @@ figure > img {
 }
 
 .nav-menu__item {
-    color: var(--dark-grey);
+    color: var(--grey);
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -324,6 +344,18 @@ figure > img {
     color: white;
 }
 
+.gallery__title{
+    padding: 0 5px 25px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.gallery__title .title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
 .gallery__items {
     flex-wrap: wrap;
     row-gap: 10px;
@@ -340,10 +372,17 @@ figure > img {
 
 }
 
-.col-g-item .g-item__cover {
+.col-g-item img {
     aspect-ratio: 1;
     object-fit: cover;
+    width: 100%;
 }
+
+.round img {
+    border-radius: 50%;
+}
+
+
 
 .g-item__text {
     display: flex;
@@ -356,9 +395,11 @@ figure > img {
     font-size: 16px;
 }
 
-.g-item__text .subtitle {
+.g-item__text .subtitle,
+.gallery__title .subtitle {
     font-size: 12px;
-    color: var(--dark-grey);
+    font-weight: 800;
+    color: var(--grey);
 }
 
 
