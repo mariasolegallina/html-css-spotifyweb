@@ -34,6 +34,15 @@ figure > img {
     display: flex;
 }
 
+/* col */
+:root {
+    --col-2: calc((100% / 12) * 2);
+    --col-3: calc((100% / 12) * 3);
+    --col-6: calc(100% / 2);
+    --col-12: 100%;
+}
+
+
 /* colours */
 :root {
     --main-view: #141922;
@@ -275,6 +284,32 @@ figure > img {
 	overflow: auto;
 }
 
+.navigation {
+    max-width: 100%;
+    overflow: scroll;
+}
+
+.col-g-item {
+    flex-wrap: wrap;
+    flex-basis: var(--col-6);
+    padding: 0 5px;
+}
+
+
+@media (min-width: 878px) {
+    .col-g-item {
+        flex-basis: var(--col-3);
+    }
+}
+
+@media (min-width: 1440px) {
+    .col-g-item {
+        flex-basis: var(--col-2);
+    }
+}
+
+
+
 /* app__toolbar */
 .app__toolbar {
     overflow: hidden;
@@ -422,27 +457,27 @@ figure > img {
 }
 
 /* DEBUG */
-/* .debug .app__content {
+.debug .navigation {
     border: solid 3px aquamarine;
     padding: 20px;
 }
 
-.debug .sidebar {
+.debug .container {
 	border: solid 3px royalblue;
 	padding: 20px;
 }
 
-.debug .main-view {
+.debug .container.row {
     border: solid 3px orange;
     padding: 20px;
-
 }
 
-.debug .app__toolbar {
-    border: solid 3px palevioletred;
+.debug .col-g-item {
+    border: solid 3px pink;
+    padding: 20px;
+}
+
+/* .debug .gallery__item {
+    border: solid 3px green;
     padding: 20px;
 } */
-.debug aside div {
-    border: solid 3px yellow;
-    padding: 20px;
-}
