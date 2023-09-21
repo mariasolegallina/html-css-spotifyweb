@@ -287,7 +287,7 @@ figure > img {
 
 .cta-bar {
     position: fixed;
-    width: 100%;
+    width: calc(100% - 50px);
     justify-content: flex-end;
     top: 0;
     right: 0;
@@ -295,6 +295,12 @@ figure > img {
     opacity: 0.5;
     padding: 20px 10px;
     justify-content: flex-end;
+}
+
+@media (min-width: 639px) {
+    .cta-bar{
+        width: calc(100% - 230px );
+    }
 }
 
 .cta-button {
