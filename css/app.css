@@ -293,7 +293,7 @@ figure > img {
     right: 0;
     background-color: rgba(0,0,0,0.5);
     /* opacity: 0.5; */
-    padding: 20px;
+    padding: 20px 40px;
     justify-content: flex-end;
 }
 
@@ -519,6 +519,10 @@ figure > img {
 
 .play-icon {
     font-size: 30px;
+}
+
+.play-icon:hover {
+    transform: scale(1.15);
 }
 
 .side-icons {
